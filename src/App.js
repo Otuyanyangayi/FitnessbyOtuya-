@@ -25,7 +25,7 @@ function App() {
     track: {},
   })(Switch)
   return (
-    <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundsize:"cover",
+    <div style={{ backgroundColor:LightMode ? "gold" : "black", backgroundRepeat: 'no-repeat', backgroundsize:"cover",
     color: LightMode ? "black" : "white"}}>
       <Container maxWidth="md" style={{display: "flex", flexDirection:"column", height : "100vh"}}>
 
