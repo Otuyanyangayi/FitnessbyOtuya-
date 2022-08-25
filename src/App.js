@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import Background from './images/bg1.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat', backgroundsize:"cover"}}>
+      home
+      home
     </div>
   );
 }
