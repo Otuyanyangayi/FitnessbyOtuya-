@@ -1,4 +1,4 @@
-.LandingPage{
+.landingpage{
     font-family: "Montserrat", sans-serif;
     min-width: 100%;
     min-height: 100%;
@@ -15,16 +15,18 @@
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0 0 3px gray;
-    margin-left: 1300px;
+    
 }
 .button:hover{
     outline: none;
     transform: scale(1.05);
 }
 .span{
+    text-align: center;
     display:flex;
     justify-content:space-around;
     font-family: "Montserrat", sans-serif;
     font-size: 6em;
     margin: .9em;
+    padding-top: 16%;
 }
