@@ -1,7 +1,9 @@
-import Background from './images/bg1.jpg';
+
 import { Container, withStyles,Switch } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
+import Header from "./components/Header/Header"
+
 import './App.css';
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
     <div style={{ backgroundColor:LightMode ? "gold" : "black", backgroundRepeat: 'no-repeat', backgroundsize:"cover",
     color: LightMode ? "black" : "white"}}>
       <Container maxWidth="md" style={{display: "flex", flexDirection:"column", height : "100vh"}}>
-
+      <Header/>
       <div
           style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}
         >
@@ -38,6 +40,7 @@ function App() {
             onChange={() => setLightMode(!LightMode)}
           />
         </div>
+        
       </Container>
     </div>
   );
