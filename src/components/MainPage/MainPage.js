@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../Header/Header";
+import "./MainPage.css"
 
 
 function MainPage(){
     return(
-        <div>
-            <Header/>
+        <div className="mainpage">
+            <Header />
         </div>
     )
 }
 
-export default MainPage;
+export default MainPage
