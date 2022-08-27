@@ -1,9 +1,30 @@
 .header{
     justify-content:space-around;
     font-family: 'Lobster', cursive;
-    color: black;
+    
     text-align: center;
     font-size: 3.5em;
     margin: 0.1em;
 }
-
+button{
+    font-family: 'Lobster', cursive;
+    font-size: 0.3em;
+    padding: 0.2em 1em;
+    border: 2px solid WHITE;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 3px gray;
+    margin-left: 5em;
+    
+    
+    
+}
+button:hover{
+    outline: none;
+    transform: scale(1.05);
+    color: blue;
+}
+.headerspan{
+    font-size: 0.4em;
+    
+}

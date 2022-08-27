@@ -5,7 +5,19 @@ import "./Header.css";
 function Header () {
     return (
     <div className="header">
-        header component
+         <Link to="/" >
+           <span className="headerspan"> Fitness By Otuya</span>
+        </Link>
+        <Link to="/mainpage">
+          <button>Home</button>
+        </Link>
+        <Link to="/newroutine">
+            <button>Design New Routine</button>
+        </Link>
+        <Link to="/newexercise">
+        <button>Add New Exercises</button>
+        </Link>
+            
     </div>
 
     )}
