@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 function CreateExerciseForm(){
+
+    
+
+
+
     return (
         <div>
-            Create new exercise form 
+            <Header />
         </div>
     )
 }
