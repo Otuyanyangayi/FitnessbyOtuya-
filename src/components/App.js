@@ -1,7 +1,7 @@
 
 import { Container, withStyles,Switch } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
-import React, {  useState } from "react";
+import React, {  useState, useEffect } from "react";
 import background from "../images/bg2.jpg"
 import Background from "../images/bg4.jpg"
 import LandingPage from "./LandingPage/LandingPage";
@@ -18,6 +18,16 @@ function App() {
 
 
   const [LightMode, setLightMode] = useState(true)
+  const [routines, setRoutines] = useState([])
+  const [exercise, setExercise] = useState([])
+
+
+  useEffect(() => {
+    fetch("http://localhost:9292/routines")
+    .then(res => res.json())
+    .then(setRoutines)
+  }, [])
+
 
 
   const DarkMode = withStyles({
