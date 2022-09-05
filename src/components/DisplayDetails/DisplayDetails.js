@@ -10,7 +10,7 @@ function DisplayDetails () {
             <div>
                 
                 <>
-                <p style={{color: "gray", marginTop: "20rem"}}>Click on a routine for more details</p><p>| 💪 | 🏋️ | 🏃‍♀️ |</p>
+                <p style={{ marginTop: "17rem"}}>Click on a routine for more details</p><p>| 💪 | 🏋️ | 🏃‍♀️ |</p>
                 </>
                 
             </div>

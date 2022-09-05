@@ -6,7 +6,7 @@
     overflow-y: auto;
     height: 80vh;
     width: 80%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(130, 123, 123, 0.8);
     border: 2px solid white;
     border-radius: 3px;
     box-shadow: 0 0 3px gray;
@@ -15,7 +15,7 @@
 }
 .routine-header{
     font-family: 'Lobster', cursive;
-    color: black;
+    
     text-align: left;
     font-size: 1.8em;
     margin-left: 2rem;
