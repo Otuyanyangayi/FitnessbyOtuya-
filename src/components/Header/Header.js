@@ -5,8 +5,8 @@ import "./Header.css";
 function Header () {
     return (
     <div className="header">
-         <Link to="/" >
-           <span className="headerspan"> Fitness By Otuya</span>
+         <Link to="/" style={{fontSize: "0.7em", textDecoration: 'none', color:"white"}}>
+           Fitness By Otuya
         </Link>
         <Link to="/mainpage">
           <button>Home</button>

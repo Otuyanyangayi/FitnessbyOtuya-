@@ -1,13 +1,13 @@
 .header{
     justify-content:space-around;
-    font-family: 'Lobster', cursive;
+    font-family: "Montserrat", sans-serif;
     
     text-align: center;
     font-size: 3.5em;
     margin: 0.1em;
 }
 button{
-    font-family: 'Lobster', cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.3em;
     padding: 0.2em 1em;
     border: 2px solid WHITE;
@@ -24,7 +24,9 @@ button:hover{
     transform: scale(1.05);
     color: blue;
 }
-.headerspan{
-    font-size: 0.4em;
+@media( max-width:500px){
+    .header{ 
+    justify-content: space-evenly;
+    }
     
-}
+  }

@@ -8,6 +8,10 @@ function LandingPage(){
             <Link to="/mainpage">
             <button className="button">My Routines</button>
             </Link>
+            <Link to="/mealspage">
+            <button className="button">My Meals</button>
+            </Link>
+
 
             <span className="span">Fitness By Otuya</span>
         </div>

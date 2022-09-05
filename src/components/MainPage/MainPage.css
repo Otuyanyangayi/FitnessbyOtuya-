@@ -4,4 +4,6 @@
     min-height: 100%;
     background-size: cover;
     background-position: cover;
+    max-height: 400px;
+    overflow: hidden;
 }

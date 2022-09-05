@@ -2,10 +2,13 @@
 import { Container, withStyles,Switch } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
 import React, {  useState } from "react";
+import background from "../images/bg2.jpg"
 import Background from "../images/bg4.jpg"
-import background from "../images/bg5.jpeg"
-import LandingPage from "./LandingPage.js/LandingPage";
+import LandingPage from "./LandingPage/LandingPage";
+import Search from "./meals/Search";
 import MainPage from "./MainPage/MainPage";
+import CreateRoutineFrom from "./CreateRoutineForm/CreateRoutineForm";
+import CreateExerciseForm from "./CreateExerciseForm/CreateExerciseForm";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 
@@ -31,10 +34,10 @@ function App() {
     track: {},
   })(Switch)
   return (
-    <div style={{ backgroundImage: LightMode ? `url(${Background})`: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize:"cover",
+    
+      <Container  style={{display: "flex", flexDirection:"column",  backgroundImage: LightMode ? `url(${Background})`: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize:"cover",
     color: LightMode ? "black" : "white", height: "100vh"}}>
-      <Container maxWidth="md" style={{display: "flex", flexDirection:"column", height : "100vh"}}>
-      <div style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}>
+      <div style={{ position: "fixed", top: 0, right: 15, paddingTop: 10 }}>
           <span>{LightMode ? "Dark" : "Light"} Mode</span>
           <DarkMode checked={LightMode} onChange={() => setLightMode(!LightMode)}/>
         </div>
@@ -42,14 +45,17 @@ function App() {
         <Router>
       <Routes>
         <Route  path = "/" element={<LandingPage />}></Route>
+        <Route path = "/mealspage" element={<Search />}></Route>
         <Route  path = "/mainpage"element={<MainPage />}></Route>
+        <Route path = "/newroutine" element={<CreateRoutineFrom />}></Route>
+        <Route path = "/newexercise" element={<CreateExerciseForm />} ></Route>
       </Routes>
       </Router>
         
         
        
       </Container>
-    </div>
+    
   );
 }
 
