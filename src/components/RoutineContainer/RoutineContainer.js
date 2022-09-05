@@ -1,11 +1,24 @@
 
 import Routine from "../Routine/Routine";
-import React from "react";
+import React, { useState }from "react";
 import "./RoutineContainer.css"
 import DisplayDetails from "../DisplayDetails/DisplayDetails";
 
 function RoutinesContainer () {
+    const [routineExercises, setRoutineExercises] = useState([])
+    const [routineImage, setRoutineImage] = useState([])
+    const [clicked, setClicked] = useState(false)
 
+    const displayDetails = (routineExercises) => {
+        setRoutineExercises(routineExercises)
+    
+    }
+    const displayRoutineImage = (routineImage) => {
+        setRoutineImage(routineImage)
+    }
+    const isTrue = (clicked) => {
+        setClicked(clicked => !clicked)
+    }
     
     return (
         <>
@@ -13,9 +26,13 @@ function RoutinesContainer () {
         <div className="routine-class">
         <div className="routine-grid-layout">
             
-                <Routine />
+                <Routine 
+                displayDetails={displayDetails}
+                displayRoutineImage={displayRoutineImage}
+                isTrue={isTrue}
+                 />
         </div>
-        <DisplayDetails />
+        <DisplayDetails routineImage={routineImage} routineExercises={routineExercises}/>
         </div>
         </>
     )}

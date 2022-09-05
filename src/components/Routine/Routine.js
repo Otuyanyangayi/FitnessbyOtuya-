@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Routine.css"
 
-function Routine(){
+function Routine( isTrue){
 
     return(
         <>
@@ -11,7 +11,10 @@ function Routine(){
                 <li>Routine ID: 30</li>
                 Focus: example
             </div>
-            <button className='routine-btn'>
+            <button className='routine-btn' onClick={() => {
+                isTrue()
+               
+            }}>
                 Details
             </button>
             <button className='routine-btn'>Delete</button>
