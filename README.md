@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# FItness by Otuya 
+This is the front ent bit of an Application that allows the user to keep track of there routines and meals for optimum fitness. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-1234
-In the project directory, you can run:
+## Project Status
+This project is currently under development.
 
-### `npm start`
+### Project Screen Shot (UI)
+<img src="fitness-by-otuya-frontend/src/images/darkmode.png" alt="ui" />
+<img src="fitness-by-otuya-frontend/src/images/lightmode.png" alt="ui" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation ansd Setup Instructions
 
-### `npm test`
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation:
+``` bash
+# Install dependencies
 
-### `npm run build`
+npm install 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# To Start Server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start 
+``` 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Visit App:
 
-### `npm run eject`
+## Known Bugs
+There are no known bugs as of now.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
+* HTML- to build the structure of the page
+* CSS- to style the the pages
+* Reactjs Library- to create the app
+* Materialui
+* Bootstrap
+* API  - fetches data from the backed -https://github.com/Otuyanyangayi/FitnessbyOtuya-backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Reflection 
+This was a 1 week long project built during my Third module at Moringa School of Software Development. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ I started this process by using the `create-react-app` boilerplate, then adding `Materialui` and `bootstrap`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Support and contact details
+Contact me via gracenyangayi@gmail.com
