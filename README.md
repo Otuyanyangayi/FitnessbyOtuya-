@@ -10,7 +10,7 @@ This project is currently under development.
 * Dark Mode UI
 <img src="src/images/darkmode.png" alt="ui" />
 
-*Light Mode UI
+* Light Mode UI
 <img src="src/images/lightmode.png" alt="ui" />
 
 
