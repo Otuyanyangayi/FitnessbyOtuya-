@@ -7,8 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is currently under development.
 
 ### Project Screen Shot (UI)
-<img src="fitness-by-otuya-frontend/src/images/darkmode.png" alt="ui" />
-<img src="fitness-by-otuya-frontend/src/images/lightmode.png" alt="ui" />
+<img src="src/images/darkmode.png" alt="ui" />
+<img src="src/images/lightmode.png" alt="ui" />
 
 
 ### Installation ansd Setup Instructions
