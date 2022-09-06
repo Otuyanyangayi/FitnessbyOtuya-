@@ -7,7 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is currently under development.
 
 ### Project Screen Shot (UI)
+* Dark Mode UI
 <img src="src/images/darkmode.png" alt="ui" />
+
+*Light Mode UI
 <img src="src/images/lightmode.png" alt="ui" />
 
 
