@@ -4,11 +4,11 @@ import RoutinesContainer from "../RoutineContainer/RoutineContainer";
 import "./MainPage.css"
 
 
-function MainPage(){
+function MainPage({routines, handleDelete}){
     return(
         <div className="mainpage">
             <Header />
-            <RoutinesContainer />
+            <RoutinesContainer routines={routines} handleDelete={handleDelete} />
         </div>
     )
 }
