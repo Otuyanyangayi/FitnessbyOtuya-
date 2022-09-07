@@ -4,7 +4,7 @@ import React, { useState }from "react";
 import "./RoutineContainer.css"
 import DisplayDetails from "../DisplayDetails/DisplayDetails";
 
-function RoutinesContainer () {
+function RoutinesContainer ({routines,handleDelete}) {
     const [routineExercises, setRoutineExercises] = useState([])
     const [routineImage, setRoutineImage] = useState([])
     const [clicked, setClicked] = useState(false)
@@ -25,12 +25,15 @@ function RoutinesContainer () {
         <div className="routine-header">Routine List:</div>
         <div className="routine-class">
         <div className="routine-grid-layout">
-            
+        {routines.map(routine => 
                 <Routine 
+                key={routine.id} 
+                routine={routine}
+                handleDelete={handleDelete}
                 displayDetails={displayDetails}
                 displayRoutineImage={displayRoutineImage}
                 isTrue={isTrue}
-                 />
+                />)}
         </div>
         <DisplayDetails routineImage={routineImage} routineExercises={routineExercises}/>
         </div>
