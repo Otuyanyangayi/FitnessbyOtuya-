@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header/Header";
 import './CreateRoutineForm.css';
 
-function CreateRoutineForm() {
+function CreateRoutineForm({handleAddRoutine}) {
   const [formData, setFormData] = useState({
     routine_name: "",
     muscle_group: "",
@@ -15,8 +15,9 @@ function CreateRoutineForm() {
   };
 
   const handleSubmit = (e) => {
+    const newRoutine = {...formData}
     e.preventDefault();
-
+    handleAddRoutine(newRoutine)
     reset();
   };
 
