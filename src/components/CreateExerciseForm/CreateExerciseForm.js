@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../Header/Header';
 import "./CreateExerciseForm.css"
 
-function CreateExerciseForm(){
+function CreateExerciseForm({handleAddExercise}){
 
     const [formData, setFormData] = useState({
         name: '',
@@ -15,9 +15,9 @@ function CreateExerciseForm(){
     }
 
     const handleSubmit = (e) => {
-        
+        const newExercise = {...formData}
         e.preventDefault() 
-       
+        handleAddExercise(newExercise)
         reset()
     }
 
