@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom"
-import "./Header.css";
+import "../Header/Header.css";
 
 function Header () {
     return (
@@ -8,14 +8,14 @@ function Header () {
          <Link to="/" style={{fontSize: "0.7em", textDecoration: 'none', color:"gray"}}>
            Fitness By Otuya
         </Link>
-        <Link to="/mainpage">
+        <Link to="/mainpage2">
           <button>Home</button>
         </Link>
-        <Link to="/newroutine">
-            <button>Design New Routine</button>
+        <Link to="/newmeal">
+            <button>Design New Meal</button>
         </Link>
-        <Link to="/newexercise">
-        <button>Add New Exercises</button>
+        <Link to="/newfood">
+        <button>Add New food </button>
         </Link>
             
     </div>
@@ -23,6 +23,3 @@ function Header () {
     )}
 
 export default Header;
-
-
-
