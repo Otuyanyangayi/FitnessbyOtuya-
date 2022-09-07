@@ -1,24 +1,38 @@
 import React from "react";
-//import './Components/style.css';
-import './style.css';
-const Mealitem=(getMeal)=>{
-    console.log(getMeal.data)
-    return(
-        <>
-             <div className="card">
-                        <img src={getMeal.data.strMealThumb} alt="meal"/>
-                        <div className ="info">
-                        <h2>{getMeal.data.strMeal}</h2>
-                        <p>{getMeal.data.strArea} food</p>
-                        </div>
-                        <div className ="recipe">
-                            <h2>Recipe</h2>
-                            <p>{getMeal.data.strInstructions}</p>
-                            <img src={getMeal.data.strMealThumb} alt="food "/>
-                            <a href={getMeal.data.strSource}>Watch video</a>
-                        </div>
-            </div>  
-        </>
-    )
+
+
+function MealDetails({mealFoods, mealImage, handleDeleteFood}) {
+  return (
+    <div className="display-layout">
+      <div>
+        {mealImage ? (
+          <img
+            style={{ margin: "2rem" }}
+            alt="mealImage"
+            src={mealImage}
+          />
+        ) : (
+          <>
+            <p style={{ marginTop: "20rem" }}>
+              Click on a Meal for more details
+            </p>
+            
+          </>
+        )}
+      </div>
+      <div>
+        {mealFoods.map((food) => (
+          <>
+            <div className="exercise-box">
+              <p>Food Name: {food.food_name}</p>
+              
+              
+            </div>
+          </>
+        ))}
+      </div>
+    </div>
+  );
 }
-export default Mealitem;
+
+export default MealDetails;
