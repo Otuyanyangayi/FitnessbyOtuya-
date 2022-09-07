@@ -8,7 +8,7 @@ function LandingPage(){
             <Link to="/mainpage">
             <button className="button">My Routines</button>
             </Link>
-            <Link to="/mealspage">
+            <Link to="/mainpage2">
             <button className="button">My Meals</button>
             </Link>
 
