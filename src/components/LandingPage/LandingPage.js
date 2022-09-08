@@ -13,7 +13,8 @@ function LandingPage(){
             </Link>
 
 
-            <span className="span">Fitness By Otuya</span>
+            <span className="span">Fitness By Otuya </span>
+            <p className="p">Created by <a href="https://otuyanyangayi.github.io/my-portfolio/">Otuya</a> | <span className="fa fa-copyright"></span> 2022 All rights reserved.</p>
         </div>
     )
 }

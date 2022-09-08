@@ -6,11 +6,13 @@ function DisplayDetails({ routineExercises, routineImage }) {
     <div className="display-layout">
       <div>
         {routineImage ? (
+          <>
           <img
             style={{ margin: "2rem" }}
-            alt="routineImage"
+            alt="click details for more details"
             src={routineImage}
           />
+          </>
         ) : (
           <>
             <p style={{ marginTop: "20rem" }}>
@@ -22,12 +24,14 @@ function DisplayDetails({ routineExercises, routineImage }) {
       </div>
       <div>
         {routineExercises.map((exercise) => (
-          <>
-            <div className="exercise-box">
+          
+            <div key={exercise.id} className="exercise-box">
+              <p>Personal Trainer ID: {exercise.personal_trainer_id}</p>
               <p>Exercise Name: {exercise.name}</p>
               <p>Instructions: {exercise.instructions}</p>
+              
             </div>
-          </>
+          
         ))}
       </div>
     </div>

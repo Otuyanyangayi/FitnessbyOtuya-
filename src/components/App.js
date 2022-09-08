@@ -14,7 +14,7 @@ import CreateMealForm from "./meals/CreateMealForm";
 import CreateFoodForm from "./meals/CreateFoodForm";
 
 function App() {
-  const [LightMode, setLightMode] = useState(true);
+  const [LightMode, setLightMode] = useState(false);
   const [routines, setRoutines] = useState([]);
   const [exercises, setExercise] = useState([]);
   const [meals, setMeals] = useState([]);
@@ -25,6 +25,8 @@ function App() {
       .then((res) => res.json())
       .then(setRoutines);
   }, []);
+
+  
 
   function handleAddRoutine(newRoutine) {
     fetch("http://localhost:9292/routines", {
@@ -38,6 +40,7 @@ function App() {
       .then((newRoutineFromBackend) => {
         const updatedRoutines = [newRoutineFromBackend, ...routines];
         setRoutines(updatedRoutines);
+        
       });
   }
 
@@ -129,7 +132,7 @@ function App() {
     track: {},
   })(Switch);
   return (
-    <Container
+    <Container 
       style={{
         display: "flex",
         flexDirection: "column",
@@ -142,7 +145,7 @@ function App() {
         height: "100vh",
       }}
     >
-      <div style={{ position: "fixed", top: 0, right: 15, paddingTop: 10 }}>
+      <div style={{ position: "fixed ", top: 0, right: 230 }}>
         <span>{LightMode ? "Dark" : "Light"} Mode</span>
         <DarkMode
           checked={LightMode}
@@ -155,7 +158,7 @@ function App() {
           <Route path="/" element={<LandingPage />}></Route>
           
           <Route path="/mainpage" element={<MainPage routines={routines} handleDelete={handleDelete} />} ></Route>
-          <Route path="/mainpage2" element={<MainPage2 meals={meals} handleDeleteMeal={handleDeleteMeal} />}></Route>
+          <Route exact path="/mainpage2" element={<MainPage2 meals={meals} handleDeleteMeal={handleDeleteMeal} />}></Route>
           <Route path="/newroutine" element={<CreateRoutineFrom handleAddRoutine={handleAddRoutine} />}></Route>
           <Route path="/newexercise" element={ <CreateExerciseForm handleAddExercise={handleAddExercise} /> }></Route>
           <Route path="/newmeal" element={<CreateMealForm handleAddMeal={handleAddMeal} />} ></Route>

@@ -10,8 +10,8 @@ function Meal({meal, handleDeleteMeal, displayDetails, displayMealImage, isTrue}
             <h3 style={{fontSize: "1.30em" }}>{meal.meal_name}</h3>
             
             <div className="routine-content">
-                <li>MEAL ID: {meal.id}</li>
-                BENEFITS: {meal.food_groups}
+                <p>MEAL ID: {meal.id}</p>
+                <p>BENEFITS: {meal.food_groups}</p>
             </div>
             <button className='routine-btn' onClick={() => {
                 isTrue()

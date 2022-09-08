@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../Header/Header';
+import {useNavigate} from "react-router-dom"
 import "./CreateExerciseForm.css"
 
 function CreateExerciseForm({handleAddExercise}){
@@ -14,11 +15,15 @@ function CreateExerciseForm({handleAddExercise}){
         setFormData({...formData, [e.target.name]:e.target.value})
     }
 
+    const navigate = useNavigate()
+
     const handleSubmit = (e) => {
         const newExercise = {...formData}
         e.preventDefault() 
         handleAddExercise(newExercise)
         reset()
+        navigate('/mainpage')
+        window.location.reload();
     }
 
     const reset = () => {

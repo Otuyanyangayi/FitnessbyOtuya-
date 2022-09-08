@@ -1,5 +1,5 @@
 .routine-box{
-    margin: 48px auto 0;
+    margin: 20px auto 0;
     width: 300px;
     height: 200px;
     font-family: Quicksand, arial, sans-serif; 
@@ -46,4 +46,20 @@
 .routine-content:hover{
     outline: none;
     transform: scale(1.05);
+}
+
+@media( max-width: 900px){
+    .routine-box{
+        margin: 10px;
+        width: 150px;
+        height: 100px;
+        font-size: 0.7em;
+        
+    }
+    .routine-content{
+        font-size:0.8em;
+    }
+    .routine-btn{
+        font-size: 0.7em;
+    }
 }

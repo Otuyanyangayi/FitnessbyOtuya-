@@ -6,24 +6,19 @@
     box-shadow: 0 0 3px gray;
     float:right;
     text-align: center;
-    margin: 1rem 1rem 1rem 1rem;
     background: rgba(130, 123, 123, 0.8);
     overflow: scroll;
 }
 .exercise-box{
-    margin: 48px auto 0;
+    margin: 20px auto 0;
     width: 650px;
-    height: 100px;
+    height: 120px;
     font-family: Quicksand, arial, sans-serif; 
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 0.25em 1em;
     border: 2px solid palevioletred;
     border-radius: 3px;
     border: 2px solid WHITE;
     cursor: pointer;
     box-shadow: 0 0 3px gray;
-}
-.exercise-box:hover{
-    outline: none;
-        transform: scale(1.05);
 }

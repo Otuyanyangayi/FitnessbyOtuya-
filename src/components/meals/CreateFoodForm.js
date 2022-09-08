@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header2 from "../Header/Header2";
+import {useNavigate} from "react-router-dom"
 
 function CreateMealForm({handleAddFood}) {
   const [formData, setFormData] = useState({
@@ -12,11 +13,15 @@ function CreateMealForm({handleAddFood}) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     const newFood = {...formData}
     e.preventDefault();
     handleAddFood(newFood);
     reset();
+    navigate('/mainpage2')
+    window.location.reload();
   };
 
   const reset = () => {

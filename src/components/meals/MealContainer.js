@@ -23,7 +23,7 @@ function MealContainer ({meals, handleDeleteMeal}) {
     
     return (
         <>
-        <div className="routine-header">Meal List: The first step to loving yourself is eating right</div>
+        <div className="routine-header">Meal List: </div>
         
         <div className="routine-class">
         <div className="routine-grid-layout">

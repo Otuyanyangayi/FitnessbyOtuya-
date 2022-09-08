@@ -11,16 +11,20 @@
     border-radius: 3px;
     box-shadow: 0 0 3px gray;
     margin-left: 3rem;
-    margin-top: 1rem;
+    overflow: scroll;
+    
 }
 .routine-header{
-    font-family: 'Lobster', cursive;
-    
-    text-align: left;
     font-size: 1.8em;
     margin-left: 2rem;
 }
 .routine-class{
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+@media( max-width: 900px){
+    .routine-header{
+        font-size: 20px;
+    }
 }

@@ -8,7 +8,7 @@ function MealDetails({mealFoods, mealImage, handleDeleteFood}) {
         {mealImage ? (
           <img
             style={{ margin: "2rem" }}
-            alt="mealImage"
+            alt="click details for more details"
             src={mealImage}
           />
         ) : (
@@ -21,15 +21,12 @@ function MealDetails({mealFoods, mealImage, handleDeleteFood}) {
         )}
       </div>
       <div>
-        {mealFoods.map((food) => (
-          <>
-            <div className="exercise-box">
-              <p>Food Name: {food.food_name}</p>
-              
+        {mealFoods.map((food) => ( 
+           <div key={food.id} className="exercise-box">
+               <p>Food Name: {food.food_name}</p>
               
             </div>
-          </>
-        ))}
+           ))}
       </div>
     </div>
   );

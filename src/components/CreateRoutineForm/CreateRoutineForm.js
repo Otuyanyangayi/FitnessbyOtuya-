@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../Header/Header";
+import {useNavigate} from "react-router-dom"
 import './CreateRoutineForm.css';
 
 function CreateRoutineForm({handleAddRoutine}) {
@@ -14,11 +15,15 @@ function CreateRoutineForm({handleAddRoutine}) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     const newRoutine = {...formData}
     e.preventDefault();
     handleAddRoutine(newRoutine)
     reset();
+    navigate('/mainpage')
+    window.location.reload();
   };
 
   const reset = () => {
