@@ -1,20 +1,20 @@
 .header{
-    justify-content:space-around;
+    justify-content:space-aroun;
     font-family: "Montserrat", sans-serif;
-    
+    padding-top: 20px;
     text-align: center;
     font-size: 3.5em;
     margin: 0.1em;
 }
 button{
     font-family: "Montserrat", sans-serif;
-    font-size: 0.3em;
+    font-size: 0.35em;
     padding: 0.2em 1em;
     border: 2px solid WHITE;
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0 0 3px gray;
-    margin-left: 5em;
+    margin-left: 3em;
     
     
     
@@ -22,11 +22,15 @@ button{
 button:hover{
     outline: none;
     transform: scale(1.05);
-    color: blue;
+    
 }
-@media( max-width:500px){
+@media( max-width:900px){
     .header{ 
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-size: 8vw;
+    }
+    .button{
+        font-size: 4vw;
     }
     
   }
