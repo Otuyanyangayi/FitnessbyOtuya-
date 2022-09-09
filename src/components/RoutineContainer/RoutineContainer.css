@@ -10,7 +10,8 @@
     border: 2px solid white;
     border-radius: 3px;
     box-shadow: 0 0 3px gray;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    
     overflow: scroll;
     
 }
@@ -24,7 +25,13 @@
 }
 
 @media( max-width: 900px){
+    .routine-grid-layout{
+        height: 75vh;
+        width: 80%;
+    }
     .routine-header{
-        font-size: 20px;
+        font-size: 15px;
+        
+      
     }
 }

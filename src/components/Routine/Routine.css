@@ -48,16 +48,19 @@
     transform: scale(1.05);
 }
 
-@media( max-width: 900px){
+@media( max-width: 600px){
     .routine-box{
-        margin: 10px;
-        width: 150px;
-        height: 100px;
-        font-size: 0.7em;
+        margin: 1px;
+        width: 90px;
+        height: 150px;
+        font-size: 0.6em;
         
     }
     .routine-content{
         font-size:0.8em;
+        
+        width: 10em;
+        
     }
     .routine-btn{
         font-size: 0.7em;

@@ -9,10 +9,15 @@
     background: rgba(130, 123, 123, 0.8);
     overflow: scroll;
 }
+img{
+    width: 200px;
+    height: 200px;
+
+}
 .exercise-box{
     margin: 20px auto 0;
     width: 650px;
-    height: 120px;
+    height: 150px;
     font-family: Quicksand, arial, sans-serif; 
     font-size: 1em;
     padding: 0.25em 1em;
@@ -22,3 +27,18 @@
     cursor: pointer;
     box-shadow: 0 0 3px gray;
 }
+ @media(max-width:600px) {
+    .display-layout{
+        width: 85%;
+        height: 75vh;
+    }
+    .exercise-box{
+        width: 150px;
+        height: 250px;
+       
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+ }
