@@ -21,7 +21,7 @@ function App() {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/routines")
+    fetch("https://fitness-by-otuya-api.herokuapp.com/routines")
       .then((res) => res.json())
       .then(setRoutines);
   }, []);
@@ -29,7 +29,7 @@ function App() {
   
 
   function handleAddRoutine(newRoutine) {
-    fetch("http://localhost:9292/routines", {
+    fetch("https://fitness-by-otuya-api.herokuapp.com/routines", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ function App() {
   }
 
   function handleAddExercise(newExercise) {
-    fetch("http://localhost:9292/exercises", {
+    fetch("https://fitness-by-otuya-api.herokuapp.com/exercises", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function App() {
   }
 
   function handleDelete(id) {
-    fetch(`http://localhost:9292/routines/${id}`, {
+    fetch(`https://fitness-by-otuya-api.herokuapp.com/routines/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
@@ -71,13 +71,13 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:9292/meals")
+    fetch("https://fitness-by-otuya-api.herokuapp.com/meals")
       .then((res) => res.json())
       .then(setMeals);
   }, []);
 
   function handleAddMeal(newMeal) {
-    fetch("http://localhost:9292/meals", {
+    fetch("https://fitness-by-otuya-api.herokuapp.com/meals", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function App() {
   }
 
   function handleAddFood(newFood) {
-    fetch("http://localhost:9292/foods", {
+    fetch("https://fitness-by-otuya-api.herokuapp.com/foods", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -107,7 +107,7 @@ function App() {
   }
 
   function handleDeleteMeal(id) {
-    fetch(`http://localhost:9292/meals/${id}`, {
+    fetch(`https://fitness-by-otuya-api.herokuapp.com/meals/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
