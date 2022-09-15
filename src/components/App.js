@@ -145,7 +145,7 @@ function App() {
         height: "100vh",
       }}
     >
-      <div style={{ position: "fixed ", top: 0, right: 5 }}>
+      <div style={{ position: "fixed ", top: 0, right: 0 }}>
         <span>{LightMode ? "Dark" : "Light"} Mode</span>
         <DarkMode
           checked={LightMode}
